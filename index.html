@@ -9,8 +9,8 @@
     <div id="game">
       <div id="stats">
         <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
-        <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
-        <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        <span class="stat">Health: <strong><span id="healthText">1000000000000000000</span></strong></span>
+        <span class="stat">Gold: <strong><span id="goldText">500000000000000000</span></strong></span>
       </div>
       <div id="controls">
         <button id="button1">Go to store</button>
@@ -27,8 +27,8 @@
     </div>
     <script>
 	let xp = 0;
-let health = 100000000000000000000000000000000000;
-let gold = 5000000000000000000000000000000000000000000000;
+let health = 10000000000000;
+let gold = 5000000000000;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
@@ -47,8 +47,9 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 const weapons = [
   { name: 'stick', power: 5 },
   { name: 'dagger', power: 50 },
-  { name: 'claw hammer', power: 500 },
-  { name: 'sword', power: 1000 }
+  { name: 'claw hammer', power: 5000 },
+  { name: 'sword', power: 10000 }
+  { name: 'dragon slayer', power: 1000000 }
 ];
 const monsters = [
   {
@@ -63,8 +64,8 @@ const monsters = [
   },
   {
     name: "dragon",
-    level: 200000,
-    health: 300000000
+    level: 2000,
+    health: 30000000
   }
 ]
 const locations = [
@@ -270,8 +271,8 @@ function winGame() {
 
 function restart() {
   xp = 0;
-  health = 10000000000000000000000000000000000;
-  gold = 50000000000000000000000000000000;
+  health = 10000000000000;
+  gold = 5000000000000;
   currentWeapon = 0;
   inventory = ["stick"];
   goldText.innerText = gold;
